@@ -21,9 +21,9 @@
 
 | 역할 (Role) | 아이디 (ID) | 비밀번호 (PW) | 진입 페이지 |
 | :--- | :--- | :--- | :--- |
-| **구매자 (Buyer)** | `buyer` | (모든 입력값) | `/buyer` |
-| **판매자 (Seller)** | `seller` | (모든 입력값) | `/seller` |
-| **관리자 (Admin)** | `admin` | (모든 입력값) | `/admin` |
+| **구매자 (Buyer)** | `admin1` | `admin1` | `/buyer` |
+| **판매자 (Seller)** | `admin2` |  `admin2` | `/seller` |
+| **관리자 (Admin)** | `admin3` |  `admin3` | `/admin` |
 
 ### 3. 기능 안내
 - **로그인/로그아웃**: 각 페이지 간의 권한 구분과 이동 경로를 테스트하기 위해 간단한 로직이 구현되어 있습니다.
