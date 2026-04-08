@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0e0e0e] border-t border-[#1a1919] w-full py-12">
+    <footer className="bg-white border-t border-outline-variant/10 w-full py-12">
       <div className="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-6">
         <div className="flex flex-col items-center md:items-start gap-4">
-          <div className="text-lg font-bold text-[#8ff5ff] font-headline uppercase leading-none">대학생 공동주문 마켓</div>
-          <p className="font-body text-sm tracking-wide text-[#adaaaa]">© 2024 대학생 공동주문 마켓. The Digital Curator for Bibliophiles.</p>
+          <div className="text-lg font-bold text-primary font-headline uppercase leading-none">대학생 공동주문 마켓</div>
+          <p className="font-body text-sm tracking-wide text-on-surface-variant">© 2026 대학생 공동주문 마켓. The Digital Curator for Bibliophiles.</p>
         </div>
         <div className="flex flex-wrap justify-center gap-8">
-          <Link className="font-body text-sm tracking-wide text-[#adaaaa] hover:text-[#d575ff] transition-colors" to="/login">Terms</Link>
-          <Link className="font-body text-sm tracking-wide text-[#adaaaa] hover:text-[#d575ff] transition-colors" to="/login">Privacy</Link>
-          <Link className="font-body text-sm tracking-wide text-[#adaaaa] hover:text-[#d575ff] transition-colors" to="/login">Seller Portal</Link>
-          <Link className="font-body text-sm tracking-wide text-[#adaaaa] hover:text-[#d575ff] transition-colors" to="/login">Admin Console</Link>
+          <Link className="font-body text-sm tracking-wide text-on-surface-variant hover:text-secondary transition-colors" to="/login">Terms</Link>
+          <Link className="font-body text-sm tracking-wide text-on-surface-variant hover:text-secondary transition-colors" to="/login">Privacy</Link>
+          <Link className="font-body text-sm tracking-wide text-on-surface-variant hover:text-secondary transition-colors" to="/login">Seller Portal</Link>
+          <Link className="font-body text-sm tracking-wide text-on-surface-variant hover:text-secondary transition-colors" to="/login">Admin Console</Link>
         </div>
         <div className="flex gap-4">
           <a className="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-[#adaaaa] hover:text-primary hover:border-primary transition-all" href="/">

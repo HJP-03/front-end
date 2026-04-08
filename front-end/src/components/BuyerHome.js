@@ -9,23 +9,23 @@ const BuyerHome = () => {
   return (
     <div className="bg-surface text-on-surface overflow-x-hidden selection:bg-primary selection:text-on-primary font-body">
       {/* TopNavBar */}
-      <nav className="fixed top-0 w-full z-50 flex justify-between items-center px-8 h-16 bg-black/40 backdrop-blur-xl border-b border-[#8ff5ff]/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
+      <nav className="fixed top-0 w-full z-50 flex justify-between items-center px-8 h-16 bg-white/40 backdrop-blur-xl border-b border-outline-variant/10 shadow-[0_4px_30px_rgba(0,0,0,0.02)]">
         <div className="flex items-center gap-8">
-          <span className="text-2xl font-black italic text-[#8ff5ff] drop-shadow-[0_0_8px_rgba(143,245,255,0.5)] font-headline tracking-tight uppercase">대학생 공동주문 마켓</span>
+          <span className="text-2xl font-black italic text-primary drop-shadow-[0_0_8px_rgba(0,106,113,0.1)] font-headline tracking-tight uppercase">대학생 공동주문 마켓</span>
           <div className="hidden md:flex items-center gap-6 font-headline tracking-tight text-sm">
-            <a className="text-[#8ff5ff] border-b-2 border-[#8ff5ff] pb-1" href="#">대시보드</a>
-            <a className="text-[#adaaaa] hover:text-[#8ff5ff] transition-colors" href="#">중고 장터</a>
-            <a className="text-[#adaaaa] hover:text-[#8ff5ff] transition-colors" href="#">주문 내역</a>
-            <a className="text-[#adaaaa] hover:text-[#8ff5ff] transition-colors" href="#">커뮤니티</a>
+            <a className="text-primary border-b-2 border-primary pb-1" href="#">대시보드</a>
+            <a className="text-on-surface-variant hover:text-primary transition-colors" href="#">중고 장터</a>
+            <a className="text-on-surface-variant hover:text-primary transition-colors" href="#">주문 내역</a>
+            <a className="text-on-surface-variant hover:text-primary transition-colors" href="#">커뮤니티</a>
           </div>
         </div>
         <div className="flex items-center gap-4">
           <div className="relative hidden lg:block">
             <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-sm">search</span>
-            <input className="bg-surface-container-highest border-none rounded-full py-1.5 pl-10 pr-4 text-sm w-64 focus:ring-1 focus:ring-primary outline-none" placeholder="희귀 도서 검색..." type="text"/>
+            <input className="bg-surface-container border-none rounded-full py-1.5 pl-10 pr-4 text-sm w-64 focus:ring-1 focus:ring-primary outline-none" placeholder="희귀 도서 검색..." type="text"/>
           </div>
-          <button className="text-[#adaaaa] hover:text-[#8ff5ff] transition-transform active:scale-90"><span className="material-symbols-outlined">notifications</span></button>
-          <button className="text-[#adaaaa] hover:text-[#8ff5ff] transition-transform active:scale-90"><span className="material-symbols-outlined">account_circle</span></button>
+          <button className="text-on-surface-variant hover:text-primary transition-transform active:scale-90"><span className="material-symbols-outlined">notifications</span></button>
+          <button className="text-on-surface-variant hover:text-primary transition-transform active:scale-90"><span className="material-symbols-outlined">account_circle</span></button>
         </div>
       </nav>
 
@@ -92,40 +92,40 @@ const BuyerHome = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Card 1 */}
-            <div className="bg-surface-container-low rounded-3xl p-4 group hover:bg-surface-container-high transition-all duration-300 hover:scale-[1.02] border border-transparent hover:border-primary/10">
+            <div className="bg-surface-container-low rounded-3xl p-4 group hover:bg-surface-container transition-all duration-300 hover:scale-[1.02] border border-transparent hover:border-primary/10 shadow-sm hover:shadow-md">
               <div className="relative aspect-square rounded-2xl overflow-hidden mb-5">
                 <img alt="빈티지 아트북" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeVFhYn3qic9kzmfIw9Fd1jMz5Ws6xv-3RpUPFBLtVe3b1Z1Bs4B3NBq8_H2cWC9DQFJyw9AGpfkWBvUVcUgQttaEp6WVs3WoYPzKnMUhVgZHgN6on-oLljA3--z74_08UD3Fkk6vcuqzFVVeT_nwclNtgrX9L6FrcUdiWvTV63SL3pWDyd4eSWevnlAfnyhqZY3viiDOpR02lWe60Ep2F73ofnFeV3Hd-KPcXgWz_vBQuiUeQw-tjNo9_3kCDqcHNQFEugLuo4_6T"/>
-                <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold text-primary border border-primary/20 uppercase tracking-widest">인기 품목</div>
+                <div className="absolute top-4 left-4 bg-white/60 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold text-primary border border-outline-variant/10 uppercase tracking-widest">인기 품목</div>
               </div>
               <div className="px-2">
-                <h3 className="text-lg font-bold headline-font mb-1 uppercase tracking-tight text-white">바우하우스 디자인 총서</h3>
+                <h3 className="text-lg font-bold headline-font mb-1 uppercase tracking-tight text-on-surface">바우하우스 디자인 총서</h3>
                 <p className="text-sm text-on-surface-variant mb-4 font-bold uppercase">4차 배치 모집 중</p>
-                <div className="flex justify-between items-center mb-2"><span className="text-xl font-black text-white headline-font uppercase">₩89,000</span><span className="text-xs text-primary font-bold uppercase tracking-widest">12/20 참여</span></div>
-                <div className="h-1.5 bg-surface-container-highest rounded-full"><div className="h-full bg-primary rounded-full shadow-[0_0_8px_rgba(143,245,255,0.5)]" style={{width: '60%'}}></div></div>
+                <div className="flex justify-between items-center mb-2"><span className="text-xl font-black text-on-surface headline-font uppercase">₩89,000</span><span className="text-xs text-primary font-bold uppercase tracking-widest">12/20 참여</span></div>
+                <div className="h-1.5 bg-surface-container rounded-full"><div className="h-full bg-primary rounded-full shadow-[0_0_8px_rgba(0,106,113,0.1)]" style={{width: '60%'}}></div></div>
               </div>
             </div>
             {/* Card 2 */}
-            <div className="bg-surface-container-low rounded-3xl p-4 group hover:bg-surface-container-high transition-all duration-300 hover:scale-[1.02] border border-transparent hover:border-primary/10">
+            <div className="bg-surface-container-low rounded-3xl p-4 group hover:bg-surface-container transition-all duration-300 hover:scale-[1.02] border border-transparent hover:border-primary/10 shadow-sm hover:shadow-md">
               <div className="relative aspect-square rounded-2xl overflow-hidden mb-5">
                 <img alt="기술 서적" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbKDKvhi3OzX-bdk6OFO61YkTBh-dbNsQC74C78w5SR8ZoqTFs1_f9y3mffgeo_jqSY7t8sleAk0coz8_0LCegXcSkRYt33vrY16ohGCNq9DJ5nYOGxCou7WpfxMGkenrR7xiZMU0ghWrokIUSceDtY2xs8JsFrObGs0dx14ToQymFEi81JSEiKPXaxe5XT9Q_A8NPXeNCLZAsB3ctRh-pAub38QVMiYqNt_NK8v6pl1ZEEdQ8DHUMJMHTDHp4vx9Lgq7dj6G_FhgQ"/>
               </div>
               <div className="px-2">
-                <h3 className="text-lg font-bold headline-font mb-1 uppercase tracking-tight text-white">컴퓨팅의 역사 (절판본)</h3>
+                <h3 className="text-lg font-bold headline-font mb-1 uppercase tracking-tight text-on-surface">컴퓨팅의 역사 (절판본)</h3>
                 <p className="text-sm text-on-surface-variant mb-4 font-bold uppercase tracking-widest">1차 배치 모집 중</p>
-                <div className="flex justify-between items-center mb-2"><span className="text-xl font-black text-white headline-font uppercase">₩125,000</span><span className="text-xs text-secondary font-bold uppercase tracking-widest">45/50 참여</span></div>
-                <div className="h-1.5 bg-surface-container-highest rounded-full"><div className="h-full bg-secondary rounded-full shadow-[0_0_8px_rgba(213,117,255,0.5)]" style={{width: '90%'}}></div></div>
+                <div className="flex justify-between items-center mb-2"><span className="text-xl font-black text-on-surface headline-font uppercase">₩125,000</span><span className="text-xs text-secondary font-bold uppercase tracking-widest">45/50 참여</span></div>
+                <div className="h-1.5 bg-surface-container rounded-full"><div className="h-full bg-secondary rounded-full shadow-[0_0_8px_rgba(131,0,180,0.1)]" style={{width: '90%'}}></div></div>
               </div>
             </div>
             {/* Card 3 */}
-            <div className="bg-surface-container-low rounded-3xl p-4 group hover:bg-surface-container-high transition-all duration-300 hover:scale-[1.02] border border-transparent hover:border-primary/10">
+            <div className="bg-surface-container-low rounded-3xl p-4 group hover:bg-surface-container transition-all duration-300 hover:scale-[1.02] border border-transparent hover:border-primary/10 shadow-sm hover:shadow-md">
               <div className="relative aspect-square rounded-2xl overflow-hidden mb-5">
                 <img alt="가죽 장정 도서" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMiGjD4to27tgVeB68lo2QmvLbmp1OBoyVKK0i3HfnDo-V8GurbjXZs7fldC54ln--XhAcqC0mqgsAX2V7jkXm-kFuRF_HNk2cKmhJzpUwr1OTypDLHhc2jXfgvg1oUsf4jAa08NdtFZEMK9OmfwNcZuTEym_eQzkrHDM-bZDo9Yb_OQjAN8Qw9dmGnfi5qGQZbx9uHM0F7DtwOg5by9qEoAdDFyCF2Zhjw17TPgf9lVDQZYldcsX9gkDgzJNGCIYG1i9V8I0FcTAB"/>
               </div>
               <div className="px-2">
-                <h3 className="text-lg font-bold headline-font mb-1 uppercase tracking-tight text-white">가죽 양장 세계 문학 전집</h3>
+                <h3 className="text-lg font-bold headline-font mb-1 uppercase tracking-tight text-on-surface">가죽 양장 세계 문학 전집</h3>
                 <p className="text-sm text-on-surface-variant mb-4 font-bold uppercase tracking-widest">예약 대기 열림</p>
-                <div className="flex justify-between items-center mb-2"><span className="text-xl font-black text-white headline-font uppercase">₩210,000</span><span className="text-xs text-tertiary font-bold uppercase tracking-widest">5/100 참여</span></div>
-                <div className="h-1.5 bg-surface-container-highest rounded-full"><div className="h-full bg-tertiary rounded-full shadow-[0_0_8px_rgba(101,175,255,0.5)]" style={{width: '5%'}}></div></div>
+                <div className="flex justify-between items-center mb-2"><span className="text-xl font-black text-on-surface headline-font uppercase">₩210,000</span><span className="text-xs text-tertiary font-bold uppercase tracking-widest">5/100 참여</span></div>
+                <div className="h-1.5 bg-surface-container rounded-full"><div className="h-full bg-tertiary rounded-full shadow-[0_0_8px_rgba(0,97,164,0.1)]" style={{width: '5%'}}></div></div>
               </div>
             </div>
           </div>
@@ -170,22 +170,22 @@ const BuyerHome = () => {
       </main>
 
       {/* SideNavBar (Desktop Context) */}
-      <aside className="hidden md:flex fixed left-0 top-16 h-[calc(100vh-64px)] w-64 bg-[#0e0e0e] border-r border-[#8ff5ff]/5 flex-col shadow-[10px_0_30px_rgba(0,0,0,0.5)] z-40 transition-all duration-300">
+      <aside className="hidden md:flex fixed left-0 top-16 h-[calc(100vh-64px)] w-64 bg-white border-r border-outline-variant/10 flex-col shadow-[10px_0_30px_rgba(0,0,0,0.02)] z-40 transition-all duration-300">
         <div className="p-6 flex flex-col gap-4">
-          <div className="bg-surface-container-low rounded-2xl p-4 border border-white/5">
+          <div className="bg-surface-container-low rounded-2xl p-4 border border-outline-variant/10">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center border border-primary/30"><span className="material-symbols-outlined text-primary">person</span></div>
-              <div><p className="text-xs font-bold headline-font text-white uppercase">김 대학생</p><p className="text-[10px] text-on-surface-variant uppercase tracking-widest font-bold">VIP COLLECTOR</p></div>
+              <div><p className="text-xs font-bold headline-font text-on-surface uppercase">김 대학생</p><p className="text-[10px] text-on-surface-variant uppercase tracking-widest font-bold">VIP COLLECTOR</p></div>
             </div>
           </div>
         </div>
         <div className="flex-grow flex flex-col font-headline text-sm uppercase tracking-widest">
-          <a className="bg-gradient-to-r from-[#8ff5ff]/20 to-transparent text-[#8ff5ff] border-l-4 border-[#8ff5ff] px-6 py-4 flex items-center gap-3" href="#"><span className="material-symbols-outlined">dashboard</span> 개요</a>
-          <a className="text-[#adaaaa] px-6 py-4 flex items-center gap-3 hover:translate-x-2 transition-transform hover:bg-[#1a1919]" href="#"><span className="material-symbols-outlined">shopping_bag</span> 중고 장터</a>
-          <a className="text-[#adaaaa] px-6 py-4 flex items-center gap-3 hover:translate-x-2 transition-transform hover:bg-[#1a1919]" href="#"><span className="material-symbols-outlined">inventory_2</span> 주문 내역</a>
-          <a className="text-[#adaaaa] px-6 py-4 flex items-center gap-3 hover:translate-x-2 transition-transform hover:bg-[#1a1919]" href="#"><span className="material-symbols-outlined">group</span> 커뮤니티</a>
+          <a className="bg-gradient-to-r from-primary/10 to-transparent text-primary border-l-4 border-primary px-6 py-4 flex items-center gap-3" href="#"><span className="material-symbols-outlined">dashboard</span> 개요</a>
+          <a className="text-on-surface-variant px-6 py-4 flex items-center gap-3 hover:translate-x-2 transition-transform hover:bg-surface-container" href="#"><span className="material-symbols-outlined">shopping_bag</span> 중고 장터</a>
+          <a className="text-on-surface-variant px-6 py-4 flex items-center gap-3 hover:translate-x-2 transition-transform hover:bg-surface-container" href="#"><span className="material-symbols-outlined">inventory_2</span> 주문 내역</a>
+          <a className="text-on-surface-variant px-6 py-4 flex items-center gap-3 hover:translate-x-2 transition-transform hover:bg-surface-container" href="#"><span className="material-symbols-outlined">group</span> 커뮤니티</a>
         </div>
-        <div className="p-6 border-t border-white/5 space-y-2">
+        <div className="p-6 border-t border-outline-variant/10 space-y-2">
           <button onClick={handleLogout} className="text-error/70 px-2 py-2 flex items-center gap-3 text-[10px] hover:text-error transition-colors font-black uppercase tracking-[0.2em]"><span className="material-symbols-outlined text-sm">logout</span> 로그아웃</button>
         </div>
       </aside>
