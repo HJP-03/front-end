@@ -21,7 +21,7 @@ const RoleSection = () => {
             <p className="text-on-surface-variant mb-6 max-w-md font-body">합리적인 가격으로 검증된 품질의 희귀본을 소유하세요. 공동구매의 힘으로 가능해집니다.</p>
             <button 
               onClick={() => navigate('/login')}
-              className="bg-primary text-on-primary px-8 py-3 rounded-lg font-bold font-headline hover:bg-white transition-colors"
+              className="bg-primary text-on-primary px-8 py-3 rounded-lg font-bold font-headline hover:bg-primary/90 transition-colors"
             >
               참여하기
             </button>
@@ -37,14 +37,14 @@ const RoleSection = () => {
             <p className="text-on-surface-variant mb-6 font-body">당신의 소중한 컬렉션을 가치 있게 판매하세요.</p>
             <button 
               onClick={() => navigate('/login')}
-              className="w-full bg-surface-variant text-on-surface border border-outline-variant px-8 py-3 rounded-lg font-bold font-headline hover:bg-secondary hover:text-on-secondary transition-all"
+              className="w-full bg-surface-container text-on-surface border border-outline-variant px-8 py-3 rounded-lg font-bold font-headline hover:bg-secondary hover:text-on-secondary transition-all"
             >
               등록하기
             </button>
           </div>
         </div>
         {/* Admin */}
-        <div className="md:col-span-12 group relative overflow-hidden bg-surface-container rounded-xl p-8 flex flex-col md:flex-row items-center justify-between border border-[#1a1919] hover:border-primary/30 transition-all">
+        <div className="md:col-span-12 group relative overflow-hidden bg-surface-container rounded-xl p-8 flex flex-col md:flex-row items-center justify-between border border-outline-variant/10 hover:border-primary/30 transition-all">
           <div className="flex items-center gap-6 mb-6 md:mb-0">
             <div className="w-16 h-16 rounded-full bg-tertiary/20 flex items-center justify-center">
               <span className="material-symbols-outlined text-tertiary text-3xl">settings_input_component</span>

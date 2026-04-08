@@ -35,7 +35,7 @@ const Login = () => {
 
       {/* Login Container */}
       <div className="relative z-10 w-full max-w-md">
-        <div className="glass-panel border border-outline-variant/15 rounded-xl p-8 md:p-10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] bg-[#1a1919]/60 backdrop-blur-xl">
+        <div className="glass-panel border border-outline-variant/15 rounded-xl p-8 md:p-10 shadow-[0_20px_50px_rgba(0,0,0,0.05)] bg-white/60 backdrop-blur-xl">
           {/* Header Section */}
           <div className="mb-10 text-center">
             <span className="text-secondary font-headline text-[10px] uppercase tracking-[0.3em] mb-2 block">Secure Access</span>
@@ -49,7 +49,7 @@ const Login = () => {
               <label className="block text-[10px] uppercase tracking-widest text-on-surface-variant font-bold ml-1">이메일 또는 사용자 이름</label>
               <div className="relative group">
                 <input 
-                  className="w-full bg-surface-container-highest border-none rounded-lg py-4 px-5 text-on-surface placeholder:text-outline focus:ring-0 focus:outline-none transition-all duration-300 border-b-2 border-transparent focus:border-primary outline-none" 
+                  className="w-full bg-surface-container border-none rounded-lg py-4 px-5 text-on-surface placeholder:text-outline focus:ring-0 focus:outline-none transition-all duration-300 border-b-2 border-transparent focus:border-primary outline-none" 
                   placeholder="admin1" 
                   type="text"
                   value={userId}
@@ -63,7 +63,7 @@ const Login = () => {
               </div>
               <div className="relative group">
                 <input 
-                  className="w-full bg-surface-container-highest border-none rounded-lg py-4 px-5 text-on-surface placeholder:text-outline focus:ring-0 focus:outline-none transition-all duration-300 border-b-2 border-transparent focus:border-primary outline-none" 
+                  className="w-full bg-surface-container border-none rounded-lg py-4 px-5 text-on-surface placeholder:text-outline focus:ring-0 focus:outline-none transition-all duration-300 border-b-2 border-transparent focus:border-primary outline-none" 
                   placeholder="••••••••" 
                   type="password"
                   value={password}
@@ -72,7 +72,7 @@ const Login = () => {
               </div>
             </div>
             <div className="pt-2">
-              <button className="w-full bg-primary text-on-primary font-headline font-bold py-4 rounded-lg shadow-[0_0_20px_rgba(143,245,255,0.2)] hover:shadow-[0_0_30px_rgba(143,245,255,0.4)] transition-all duration-300 transform active:scale-[0.98]" type="submit">
+              <button className="w-full bg-primary text-on-primary font-headline font-bold py-4 rounded-lg shadow-[0_0_20px_rgba(0,106,113,0.1)] hover:shadow-[0_0_30px_rgba(0,106,113,0.2)] transition-all duration-300 transform active:scale-[0.98]" type="submit">
                 로그인
               </button>
             </div>
@@ -87,11 +87,11 @@ const Login = () => {
 
           {/* Social Logins */}
           <div className="grid grid-cols-2 gap-4">
-            <button className="flex items-center justify-center gap-3 bg-surface-container hover:bg-surface-container-high transition-colors py-3 rounded-lg border border-outline-variant/15 group">
+            <button className="flex items-center justify-center gap-3 bg-white hover:bg-surface-container transition-colors py-3 rounded-lg border border-outline-variant/15 group">
               <img alt="Google" className="w-5 h-5 opacity-70 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeL4HPtZ2n0ZWWQdFlAGpo8kw0bFoSOu4lNZ9hYiE1qTeQqIpTA4UH54CwGBH6DuNq7k7DYWrl96vBXCRWDQZxZxfjc3h-rs08K5rI2CN6YemA9mzUOc5sxNBLXsYgjAJueI-jwxMecZku5mqWJP3-UpeJfyUyan3eS3i24tYTrRQ6kpBEy7e_fj0toRGC3j66FHTYxubnOOorHWUu0FtojrqAPTbtw2LCiBzeCmGqkYWIPbxGIDtkUrDVkp2viaYUt_mHyJD-c07x" />
               <span className="text-xs font-bold uppercase tracking-wider">Google</span>
             </button>
-            <button className="flex items-center justify-center gap-3 bg-surface-container hover:bg-surface-container-high transition-colors py-3 rounded-lg border border-outline-variant/15 group">
+            <button className="flex items-center justify-center gap-3 bg-white hover:bg-surface-container transition-colors py-3 rounded-lg border border-outline-variant/15 group">
               <span className="material-symbols-outlined text-tertiary">account_balance_wallet</span>
               <span className="text-xs font-bold uppercase tracking-wider">Wallet</span>
             </button>
